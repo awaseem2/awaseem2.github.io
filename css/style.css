@@ -126,7 +126,8 @@ body {
     -moz-filter: brightness(100%);
 	-o-filter: brightness(100%);
 	-ms-filter: brightness(100%);
-	filter: brightness(100%);
+    filter: brightness(100%);
+    transition:all .2s;
 }
 
 .card img:hover {
