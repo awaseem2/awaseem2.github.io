@@ -101,7 +101,8 @@ body {
 	align-items: center;
 	background: #f2f2f7;
 	border-radius: 8px;
-	transition: .15s background
+    transition: .15s background;
+    position: relative;
 }
 
 .card:hover {
@@ -130,10 +131,34 @@ body {
     transition:all .2s;
 }
 
-.card img:hover {
+.card:hover img {
     -webkit-filter: brightness(70%);
 	-moz-filter: brightness(70%);
 	-o-filter: brightness(70%);
 	-ms-filter: brightness(70%);
-	filter: brightness(70%);
+    filter: brightness(70%);
+}
+
+h3 {
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.card:hover h3 {
+    opacity: 1;
+}
+
+h3 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    position: absolute;
+    font-size: 98%;
+    top: 35%;
+    left:  52%;
+    -webkit-transform: translate(-50%, -50%); /* iOS */
+    transform: translate(-50%, -50%);
+  }
+
+.card>.linkedin svg {
+    size: 110%;
 }
