@@ -121,7 +121,7 @@ body {
 }
 
 .card img {
-    width: 250px;
+    width: 100%;
     border-radius: 8px;
     -webkit-filter: brightness(100%);
     -moz-filter: brightness(100%);
@@ -158,7 +158,3 @@ h3 {
     -webkit-transform: translate(-50%, -50%); /* iOS */
     transform: translate(-50%, -50%);
   }
-
-.card>.linkedin svg {
-    size: 110%;
-}
